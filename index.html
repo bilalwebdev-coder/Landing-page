@@ -2,714 +2,424 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SC WAKE</title>
-  <link rel="stylesheet" href="code.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+     <title>Health - Medical Website Template</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/tooplate-style.css">
+
 </head>
 
-<body>
-
-  <div class="text-widget">
-
-    <!-- Message Box -->
-    <div class="text-box" id="textBox">
-      <span class="close-btn" id="closeBtn">
-        <i class="fa-solid fa-xmark"></i>
-      </span>
-
-      <p>Hi there, have a question? Send us a text!</p>
-    </div>
-
-    <!-- Text Button -->
-    <div class="text-button" id="textBtn">
-      <i class="fa-solid fa-comment"></i>
-      <span>Text us!</span>
-    </div>
-
-  </div>
-  <div class="side-toolbar">
-
-    <button class="tool-btn" id="undoBtn">
-      <i class="fa-solid fa-rotate-left"></i>
-    </button>
-
-    <button class="tool-btn" id="shareBtn">
-      <i class="fa-solid fa-share-nodes"></i>
-    </button>
-
-    <button class="tool-btn" id="topBtn">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-  </div>
-  <header class="scw-header">
-    <div class="scw-header__inner">
-      <div class="scw-header__mobile-left">
-        <button class="scw-header__icon-btn scw-header__menu-btn" aria-label="Open menu" type="button">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <button class="scw-header__icon-btn scw-header__search-toggle" aria-label="Search" type="button">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
-            stroke-linejoin="round">
-            <circle cx="11" cy="11" r="7"></circle>
-            <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
-          </svg>
-        </button>
-      </div>
-
-      <a href="#" class="scw-header__logo">
-        <img src="images/logo.png" alt="SC Wake">
-      </a>
-
-      <div class="scw-header__search">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <circle cx="11" cy="11" r="7"></circle>
-          <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
-        </svg>
-        <input type="text" placeholder="Search SC Wake">
-      </div>
-
-      <nav class="scw-header__nav">
-        <a href="#">SHOP</a>
-        <a href="#">CUSTOM</a>
-        <a href="#">CHOOSE MY RIDE</a>
-        <a href="#">BLOG</a>
-        <a href="#">ABOUT</a>
-        <a href="#">RESOURCES</a>
-        <a href="#">CONTACT</a>
-      </nav>
-
-      <div class="scw-header__actions">
-        <a href="#" class="scw-header__icon-btn" aria-label="Account">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2.25c-4.14 0-7.5 2.68-7.5 6v.75h15v-.75c0-3.32-3.36-6-7.5-6Z" />
-          </svg>
-        </a>
-
-        <a href="#" class="scw-header__cart" aria-label="Cart">
-          <svg viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M7 18a2 2 0 1 0 2 2 2 2 0 0 0-2-2Zm10 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2ZM6.2 6l.6 3h11.45a1 1 0 0 1 .98 1.2l-1.1 5A1 1 0 0 1 17 16H8a1 1 0 0 1-.98-.8L4.28 3H2V1h3a1 1 0 0 1 .98.8L6.2 6Z" />
-          </svg>
-          <span class="scw-header__cart-count">0</span>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <div class="scw-mobile-menu">
-    <div class="scw-mobile-menu__panel">
-      <div class="scw-mobile-menu__head">
-        <h2>MENU</h2>
-        <button class="scw-mobile-menu__close" type="button" aria-label="Close menu">×</button>
-      </div>
-
-      <div class="scw-mobile-menu__body">
-        <ul class="scw-mobile-menu__nav">
-          <li><a href="#">SHOP <span>›</span></a></li>
-          <li><a href="#">CUSTOM <span>›</span></a></li>
-          <li><a href="#">CHOOSE MY RIDE</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">ABOUT <span>›</span></a></li>
-          <li><a href="#">RESOURCES <span>›</span></a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-
-        <div class="scw-mobile-menu__account">
-          <a href="#">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M12 12a4.5 4.5 0 1 0-4.5-4.5A4.5 4.5 0 0 0 12 12Zm0 2.25c-4.14 0-7.5 2.68-7.5 6v.75h15v-.75c0-3.32-3.36-6-7.5-6Z" />
-            </svg>
-            <span>SIGN IN</span>
-          </a>
-
-          <a href="#">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                d="M12 21s-6.7-4.35-9.2-8.15C.65 9.52 2.57 5.5 6.43 5.5c2.16 0 3.4 1.2 4.07 2.3.67-1.1 1.91-2.3 4.07-2.3 3.86 0 5.78 4.02 3.63 7.35C18.7 16.65 12 21 12 21Z" />
-            </svg>
-            <span>WISH LIST</span>
-          </a>
-        </div>
-
-        <div class="scw-mobile-menu__contact">
-          <a href="tel:8126370262">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path
-                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.63 2.62a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6.27 6.27l1.28-1.29a2 2 0 0 1 2.11-.45c.84.3 1.72.51 2.62.63A2 2 0 0 1 22 16.92z" />
-            </svg>
-            <span>(812) 637-0262</span>
-          </a>
-        </div>
-
-        <div class="scw-mobile-menu__social">
-          <a href="YOUR-FACEBOOK-LINK" aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a>
-
-          <a href="YOUR-YOUTUBE-LINK" aria-label="YouTube">
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-
-          <a href="YOUR-PINTEREST-LINK" aria-label="Pinterest">
-            <i class="fa-brands fa-pinterest-p"></i>
-          </a>
-
-          <a href="YOUR-INSTAGRAM-LINK" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-
-          <a href="YOUR-LINKEDIN-LINK" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="scw-mobile-menu__overlay"></div>
-
-  <section class="scw-flooring-hero">
-    <div class="scw-flooring-hero__media">
-      <img src="images/image 1.jpg" alt="Marine flooring boat interior">
-    </div>
-
-    <div class="scw-flooring-hero__content-side">
-      <div class="scw-flooring-hero__container">
-        <div class="scw-flooring-hero__content">
-          <div class="scw-flooring-hero__badge">
-            <img src="images/frame-71.webp" alt="SeaDek Certified Fabricator">
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+     <header>
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-4 col-sm-5" style="margin-top: 1%;">
+                         <p>Welcome to a Professional Health Care</p>
+                    </div>
+                    <div class="col-md-8 col-sm-7 text-align-right">
+                         <span class="phone-icon"><i class="fa fa-phone"></i> 010-060-0160</span>
+                         <span class="date-icon"><i class="fa fa-calendar-plus-o"></i> 6:00 AM - 10:00 PM
+                              (Mon-Fri)</span>
+                         <span class="email-icon"><i class="fa fa-envelope-o"></i> <a
+                                   href="#">info@company.com</a></span>
+                    </div>
+               </div>
           </div>
+     </header>
+     <section class="navbar navbar-default navbar-static-top" role="navigation">
+          <div class="container">
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand"><i class="fa fa-h-square"></i>ealth Center</a>
+               </div>
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="#top" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About Us</a></li>
+                         <li><a href="#team" class="smoothScroll">Doctors</a></li>
+                         <li><a href="#news" class="smoothScroll">News</a></li>
+                         <li><a href="#google-map" class="smoothScroll">Contact</a></li>
+                         <li class="appointment-btn"><a href="#appointment">Make an appointment</a></li>
+                    </ul>
+               </div>
 
-          <h1 class="scw-flooring-hero__title">
-            <span class="scw-flooring-hero__title-line">MARINE FLOORING</span>
-            <span class="scw-flooring-hero__title-line">THAT LOOKS GREAT</span>
-            <span class="scw-flooring-hero__title-line scw-flooring-hero__title-line--green">&amp; FEELS EVEN
-              BETTER</span>
-          </h1>
-
-          <p class="scw-flooring-hero__text">
-            Premium SeaDek products for boats, jet skis, UTVs,<br> golf carts, and more engineered by boaters, for <br>
-            boaters with 20+ years of marine expertise
-          </p>
-
-          <div class="scw-flooring-hero__buttons">
-            <a href="#" class="scw-flooring-hero__btn scw-flooring-hero__btn--primary">SHOP SC WAKE NOW</a>
-            <a href="#" class="scw-flooring-hero__btn scw-flooring-hero__btn--secondary">LEARN MORE</a>
           </div>
+     </section>
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
 
-          <div class="scw-flooring-hero__features">
-            <div class="scw-flooring-hero__feature">
-              <span>✓</span>
-              <p>20+ Years</p>
-            </div>
-
-            <div class="scw-flooring-hero__feature">
-              <span>✓</span>
-              <p>5-Star Rated</p>
-            </div>
-
-            <div class="scw-flooring-hero__feature">
-              <span>✓</span>
-              <p>Ships Fast</p>
-            </div>
-
-            <div class="scw-flooring-hero__feature">
-              <span>✓</span>
-              <p>400+ Products</p>
-            </div>
+                    <div class="owl-carousel owl-theme">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="col-md-offset-1 col-md-10">
+                                        <h3>Let's make your life happier</h3>
+                                        <h1>Healthy Living</h1>
+                                        <a href="#team" class="section-btn btn btn-default smoothScroll">Meet Our
+                                             Doctors</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="item item-second">
+                              <div class="caption">
+                                   <div class="col-md-offset-1 col-md-10">
+                                        <h3>Aenean luctus lobortis tellus</h3>
+                                        <h1>New Lifestyle</h1>
+                                        <a href="#about" class="section-btn btn btn-default btn-gray smoothScroll">More
+                                             About Us</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="item item-third">
+                              <div class="caption">
+                                   <div class="col-md-offset-1 col-md-10">
+                                        <h3>Pellentesque nec libero nisi</h3>
+                                        <h1>Your Health Benefits</h1>
+                                        <a href="#news" class="section-btn btn btn-default btn-blue smoothScroll">Read
+                                             Stories</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="scw-reasons">
-    <div class="scw-reasons__top">
-      <div class="scw-reasons__top-inner">
-        <div class="scw-reasons__stat">
-          <div class="scw-reasons__stat-icon">
-            <i class="fa-regular fa-award"><img src="images/Icon.png" alt=""></i>
+     </section>
+     <section id="about">
+          <div class="container">
+               <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.6s">Welcome to Your <i
+                                        class="fa fa-h-square"></i>ealth Center</h2>
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <p>Aenean luctus lobortis tellus, vel ornare enim molestie condimentum. Curabitur
+                                        lacinia nisi vitae velit volutpat venenatis.</p>
+                                   <p>Sed a dignissim lacus. Quisque fermentum est non orci commodo, a luctus urna
+                                        mattis. Ut placerat, diam a tempus vehicula.</p>
+                              </div>
+                              <figure class="profile wow fadeInUp" data-wow-delay="1s">
+                                   <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                   <figcaption>
+                                        <h3>Dr. Neil Jackson</h3>
+                                        <p>General Principal</p>
+                                   </figcaption>
+                              </figure>
+                         </div>
+                    </div>
+
+               </div>
           </div>
-          <div class="scw-reasons__stat-content">
-            <h3>20+ Years</h3>
-            <p>Marine industry experience</p>
+     </section>
+     <section id="team" data-stellar-background-ratio="1">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="about-info">
+                              <h2 class="wow fadeInUp" data-wow-delay="0.1s">Our Doctors</h2>
+                         </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                              <img src="images/team-image1.jpg" class="img-responsive" alt="">
+                              <div class="team-info">
+                                   <h3>Nate Baston</h3>
+                                   <p>General Principal</p>
+                                   <div class="team-contact-info">
+                                        <p><i class="fa fa-phone"></i> 010-020-0120</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">general@company.com</a></p>
+                                   </div>
+                                   <ul class="social-icon">
+                                        <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                                        <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <img src="images/team-image2.jpg" class="img-responsive" alt="">
+                              <div class="team-info">
+                                   <h3>Jason Stewart</h3>
+                                   <p>Pregnancy</p>
+                                   <div class="team-contact-info">
+                                        <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">pregnancy@company.com</a></p>
+                                   </div>
+                                   <ul class="social-icon">
+                                        <li><a href="#" class="fa fa-facebook-square"></a></li>
+                                        <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                        <li><a href="#" class="fa fa-flickr"></a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <img src="images/team-image3.jpg" class="img-responsive" alt="">
+                              <div class="team-info">
+                                   <h3>Miasha Nakahara</h3>
+                                   <p>Cardiology</p>
+                                   <div class="team-contact-info">
+                                        <p><i class="fa fa-phone"></i> 010-040-0140</p>
+                                        <p><i class="fa fa-envelope-o"></i> <a href="#">cardio@company.com</a></p>
+                                   </div>
+                                   <ul class="social-icon">
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+               </div>
           </div>
-        </div>
+     </section>
+     <section id="news" data-stellar-background-ratio="2.5">
+          <div class="container">
+               <div class="row">
 
-        <div class="scw-reasons__stat">
-          <div class="scw-reasons__stat-icon">
-            <i class="fa-regular fa-star"></i>
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Latest News</h2>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <a href="news-detail.html">
+                                   <img src="images/news-image1.jpg" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>March 08, 2018</span>
+                                   <h3><a href="news-detail.html">About Amazing Technology</a></h3>
+                                   <p>Maecenas risus neque, placerat volutpat tempor ut, vehicula et felis.</p>
+                                   <div class="author">
+                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <div class="author-info">
+                                             <h5>Jeremie Carlson</h5>
+                                             <p>CEO / Founder</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <a href="news-detail.html">
+                                   <img src="images/news-image2.jpg" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>February 20, 2018</span>
+                                   <h3><a href="news-detail.html">Introducing a new healing process</a></h3>
+                                   <p>Fusce vel sem finibus, rhoncus massa non, aliquam velit. Nam et est ligula.</p>
+                                   <div class="author">
+                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <div class="author-info">
+                                             <h5>Jason Stewart</h5>
+                                             <p>General Director</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="news-thumb wow fadeInUp" data-wow-delay="0.8s">
+                              <a href="news-detail.html">
+                                   <img src="images/news-image3.jpg" class="img-responsive" alt="">
+                              </a>
+                              <div class="news-info">
+                                   <span>January 27, 2018</span>
+                                   <h3><a href="news-detail.html">Review Annual Medical Research</a></h3>
+                                   <p>Vivamus non nulla semper diam cursus maximus. Pellentesque dignissim.</p>
+                                   <div class="author">
+                                        <img src="images/author-image.jpg" class="img-responsive" alt="">
+                                        <div class="author-info">
+                                             <h5>Andrio Abero</h5>
+                                             <p>Online Advertising</p>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
           </div>
-          <div class="scw-reasons__stat-content">
-            <h3>5-Star Rated</h3>
-            <p>Across Thousands of Reviews</p>
+     </section>
+     <section id="appointment" data-stellar-background-ratio="3">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-6">
+                         <img src="images/appointment-image.jpg" class="img-responsive" alt="">
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <form id="appointment-form" role="form" method="post" action="#">
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
+                                   <h2>Make an appointment</h2>
+                              </div>
+                              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                             placeholder="Full Name">
+                                   </div>
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                             placeholder="Your Email">
+                                   </div>
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="date">Select Date</label>
+                                        <input type="date" name="date" value="" class="form-control">
+                                   </div>
+                                   <div class="col-md-6 col-sm-6">
+                                        <label for="select">Select Department</label>
+                                        <select class="form-control">
+                                             <option>General Health</option>
+                                             <option>Cardiology</option>
+                                             <option>Dental</option>
+                                             <option>Medical Research</option>
+                                        </select>
+                                   </div>
+                                   <div class="col-md-12 col-sm-12">
+                                        <label for="telephone">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                             placeholder="Phone">
+                                        <label for="Message">Additional Message</label>
+                                        <textarea class="form-control" rows="5" id="message" name="message"
+                                             placeholder="Message"></textarea>
+                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Submit
+                                             Button</button>
+                                   </div>
+                              </div>
+                         </form>
+                    </div>
+
+               </div>
           </div>
-        </div>
+     </section>
+     <section id="google-map">
+          <iframe
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945"
+               width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+     </section>
+     <footer data-stellar-background-ratio="5">
+          <div class="container">
+               <div class="row">
 
-        <div class="scw-reasons__stat">
-          <div class="scw-reasons__stat-icon">
-            <i class="fa-solid fa-truck-fast"></i>
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contact Info</h4>
+                              <p>Fusce at libero iaculis, venenatis augue quis, pharetra lorem. Curabitur ut dolor eu
+                                   elit consequat ultricies.</p>
+                              <div class="contact-info">
+                                   <p><i class="fa fa-phone"></i> 010-070-0170</p>
+                                   <p><i class="fa fa-envelope-o"></i> <a href="#">info@company.com</a></p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <h4 class="wow fadeInUp" data-wow-delay="0.4s">Latest News</h4>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#">
+                                             <h5>Amazing Technology</h5>
+                                        </a>
+                                        <span>March 08, 2018</span>
+                                   </div>
+                              </div>
+                              <div class="latest-stories">
+                                   <div class="stories-image">
+                                        <a href="#"><img src="images/news-image.jpg" class="img-responsive" alt=""></a>
+                                   </div>
+                                   <div class="stories-info">
+                                        <a href="#">
+                                             <h5>New Healing Process</h5>
+                                        </a>
+                                        <span>February 20, 2018</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="footer-thumb">
+                              <div class="opening-hours">
+                                   <h4 class="wow fadeInUp" data-wow-delay="0.4s">Opening Hours</h4>
+                                   <p>Monday - Friday <span>06:00 AM - 10:00 PM</span></p>
+                                   <p>Saturday <span>09:00 AM - 08:00 PM</span></p>
+                                   <p>Sunday <span>Closed</span></p>
+                              </div>
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 border-top">
+                         <div class="col-md-4 col-sm-6">
+                              <div class="copyright-text">
+                                   <p>Copyright &copy; 2018 Your Company
+
+                                        | Design: <a rel="nofollow" href="https://www.facebook.com/tooplate"
+                                             target="_parent">Tooplate</a></p>
+                              </div>
+                         </div>
+                         <div class="col-md-6 col-sm-6">
+                              <div class="footer-link">
+                                   <a href="#">Laboratory Tests</a>
+                                   <a href="#">Departments</a>
+                                   <a href="#">Insurance Policy</a>
+                                   <a href="#">Careers</a>
+                              </div>
+                         </div>
+                         <div class="col-md-2 col-sm-2 text-align-center">
+                              <div class="angle-up-btn">
+                                   <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i
+                                             class="fa fa-angle-up"></i></a>
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
           </div>
-          <div class="scw-reasons__stat-content">
-            <h3>Ships Free</h3>
-            <p>On All Orders $100+</p>
-          </div>
-        </div>
+     </footer>
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.sticky.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
 
-        <div class="scw-reasons__stat">
-          <div class="scw-reasons__stat-icon">
-            <i class="fa-regular fa-star"></i>
-          </div>
-          <div class="scw-reasons__stat-content">
-            <h3>400+ Products</h3>
-            <p>In Stock &amp; Ready to Ship</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="scw-reasons__content-wrap">
-      <div class="scw-reasons__container">
-        <div class="scw-reasons__content">
-          <p class="scw-reasons__eyebrow">THE SC WAKE DIFFERENCE</p>
-
-          <h2 class="scw-reasons__title">
-            6 REASONS TO CHOOSE <span>SC WAKE</span>
-          </h2>
-
-          <p class="scw-reasons__text">
-            From the material we source to the support we provide after <br> your order arrives — here's whatsets SC
-            Wake apart from <br>every other option on the market.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="scw-feature scw-feature--image-left">
-    <div class="scw-feature__media">
-      <img src="images/image 2.jpg" alt="Custom marine flooring design">
-    </div>
-
-    <div class="scw-feature__content-side">
-      <div class="scw-feature__container">
-        <div class="scw-feature__content">
-          <div class="scw-feature__eyebrow">
-            <span class="scw-feature__eyebrow-number">1</span>
-            <span class="scw-feature__eyebrow-text">CUSTOMIZATION</span>
-          </div>
-
-          <h2 class="scw-feature__title">
-            <span class="scw-feature__title-line">LIMITLESS <em>CUSTOM</em></span>
-            <span class="scw-feature__title-line"><em>DESIGN</em> OPTIONS</span>
-          </h2>
-
-          <p class="scw-feature__text">
-            Choose from 3 premium textures, alongside dozens <br> of color combinations, custom logos, laser art, and
-            <br> brunique routing patterns.
-          </p>
-
-          <p class="scw-feature__text">
-            Your boat is one of a kind. Your flooring should be <br> too. Request a free sample kit or jump straight
-            into <br> a custom quote today.
-          </p>
-
-          <div class="scw-feature__tags">
-            <span class="scw-feature__tag">3 TEXTURES</span>
-            <span class="scw-feature__tag">CUSTOM LOGOS</span>
-            <span class="scw-feature__tag">LASER ART</span>
-            <span class="scw-feature__tag">UNLIMITED COLORS</span>
-          </div>
-
-          <a href="#" class="scw-feature__button">
-            EXPLORE DESIGNS <span>→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="scw-feature scw-feature--image-right">
-    <div class="scw-feature__content-side">
-      <div class="scw-feature__container">
-        <div class="scw-feature__content">
-          <div class="scw-feature__eyebrow">
-            <span class="scw-feature__eyebrow-number">2</span>
-            <span class="scw-feature__eyebrow-text">INSTALLATION</span>
-          </div>
-
-          <h2 class="scw-feature__title">
-            <span class="scw-feature__title-line">EASY <em>DIY</em></span>
-            <span class="scw-feature__title-line">INSTALLATION</span>
-          </h2>
-
-          <p class="scw-feature__text">
-            Peel-and-stick application. No special tools. No <br> professional required. Clear step-by-step <br>
-            instructions come with every kit, and most boat <br> owners complete their install the same afternoon.
-          </p>
-
-          <p class="scw-feature__text">
-            If you'd rather have it done for you, our nationwide <br>network of certified installers is always ready —
-            but <br>you probably won't need them.
-          </p>
-
-          <div class="scw-feature__tags">
-            <span class="scw-feature__tag">PEEL &amp; STICK</span>
-            <span class="scw-feature__tag">NO TOOLS NEEDED</span>
-            <span class="scw-feature__tag">SAME-DAY INSTALL</span>
-          </div>
-
-          <a href="#" class="scw-feature__button">
-            DIY LEARNING CENTER <span>→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="scw-feature__media">
-      <img src="images/image 3.jpg" alt="Easy DIY installation">
-    </div>
-  </section>
-
-  <section class="scw-feature scw-feature--image-left">
-    <div class="scw-feature__media">
-      <img src="images/image 4.jpg" alt="Superior EVA foam from Spain">
-    </div>
-
-    <div class="scw-feature__content-side">
-      <div class="scw-feature__container">
-        <div class="scw-feature__content">
-          <div class="scw-feature__eyebrow">
-            <span class="scw-feature__eyebrow-number">3</span>
-            <span class="scw-feature__eyebrow-text">MATERIALS</span>
-          </div>
-
-          <h2 class="scw-feature__title">
-            <span class="scw-feature__title-line">SUPERIOR EVA</span>
-            <span class="scw-feature__title-line">FOAM <em>FROM SPAIN</em></span>
-          </h2>
-
-          <p class="scw-feature__text">
-            Not all foam flooring is equal. SC Wake sources its <br>EVA exclusively from Spain, where every batch
-            <br>undergoes rigorous quality control testing before it <br> ever reaches your boat.
-          </p>
-
-          <p class="scw-feature__text">
-            The result is superior shock absorption, genuine UV <br>resistance, and long-term durability that outlasts
-            <br>every cheap imitation on the market.
-          </p>
-
-          <div class="scw-feature__tags">
-            <span class="scw-feature__tag">SPANISH EVA</span>
-            <span class="scw-feature__tag">BATCH TESTED</span>
-            <span class="scw-feature__tag">UV RESISTANT</span>
-          </div>
-
-          <a href="#" class="scw-feature__button">
-            VIEW MATERIALS <span>→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="scw-feature scw-feature--image-right">
-    <div class="scw-feature__content-side">
-      <div class="scw-feature__container">
-        <div class="scw-feature__content">
-          <div class="scw-feature__eyebrow">
-            <span class="scw-feature__eyebrow-number">4</span>
-            <span class="scw-feature__eyebrow-text">EXPERIENCE</span>
-          </div>
-
-          <h2 class="scw-feature__title">
-            <span class="scw-feature__title-line">20+ YEARS OF</span>
-            <span class="scw-feature__title-line"><em>MARINE</em> EXPERTISE</span>
-          </h2>
-
-          <p class="scw-feature__text">
-            SC Wake is the leading supplier with over two <br>decades in the marine foam industry. We helped <br>define
-            this space and continue to push it forward <br>with every product we release.
-          </p>
-
-          <p class="scw-feature__text">
-            We're also the only EVA foam supplier with a full in- <br>house R&amp;D department — so every product
-            reflects <br> real science and continuous refinement, not <br> guesswork.
-          </p>
-
-          <div class="scw-feature__tags">
-            <span class="scw-feature__tag">20+ YEARS</span>
-            <span class="scw-feature__tag">IN-HOUSE R&amp;D</span>
-            <span class="scw-feature__tag">INDUSTRY LEADER</span>
-          </div>
-
-          <a href="#" class="scw-feature__button">
-            OUR STORY <span>→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="scw-feature__media">
-      <img src="images/image 5.jpg" alt="Marine expertise">
-    </div>
-  </section>
-  <section class="scw-feature scw-feature--image-left">
-    <div class="scw-feature__media">
-      <img src="images/image 6.jpg" alt="SeaDek certified fabricator">
-    </div>
-
-    <div class="scw-feature__content-side">
-      <div class="scw-feature__container">
-        <div class="scw-feature__content">
-          <div class="scw-feature__eyebrow">
-            <span class="scw-feature__eyebrow-number">5</span>
-            <span class="scw-feature__eyebrow-text">CERTIFICATION</span>
-          </div>
-
-          <h2 class="scw-feature__title">
-            <span class="scw-feature__title-line">SEADEK <em>CERTIFIED</em></span>
-            <span class="scw-feature__title-line">FABRICATOR</span>
-          </h2>
-
-          <p class="scw-feature__text">
-            SC Wake is one of a select handful of SeaDek- <br>certified fabricators in the country and one of the
-            <br>first to earn that distinction.
-          </p>
-
-          <p class="scw-feature__text">
-            This certification ensures every installation meets <br>the highest standards of quality and craftsmanship.
-            <br> Our team has undergone rigorous training and <br>testing to earn and maintain this prestigious
-            <br>certification, giving you confidence that your boat is <br> in expert hands.
-          </p>
-
-          <div class="scw-feature__tags">
-            <span class="scw-feature__tag">FACTORY TRAINED</span>
-            <span class="scw-feature__tag">CERTIFIED QUALITY</span>
-            <span class="scw-feature__tag">AUTHENTIC SEADEK</span>
-          </div>
-
-          <a href="#" class="scw-feature__button">
-            LEARN MORE <span>→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="scw-feature scw-feature--image-right">
-    <div class="scw-feature__content-side">
-      <div class="scw-feature__container">
-        <div class="scw-feature__content">
-          <div class="scw-feature__eyebrow">
-            <span class="scw-feature__eyebrow-number">6</span>
-            <span class="scw-feature__eyebrow-text">SUPPORT</span>
-          </div>
-
-          <h2 class="scw-feature__title">
-            <span class="scw-feature__title-line">REAL <em>PEOPLE,</em></span>
-            <span class="scw-feature__title-line"><em>REAL</em> SUPPORT</span>
-          </h2>
-
-          <p class="scw-feature__text">
-            From certified installers nationwide to a responsive <br> team that picks up fast, SC Wake backs every<br>
-            product with genuine human support — not a <br>chatbot or a 48-hour ticket queue.
-          </p>
-
-          <p class="scw-feature__text">
-            Customers return again and again not just because<br> of the product, but because of the experience they
-            <br>get every single time they reach out.
-          </p>
-
-          <div class="scw-feature__tags">
-            <span class="scw-feature__tag">FAST RESPONSE</span>
-            <span class="scw-feature__tag">CERTIFIED INSTALLERS</span>
-            <span class="scw-feature__tag">HUMAN SUPPORT</span>
-          </div>
-
-          <a href="#" class="scw-feature__button">
-            REQUEST A QUOTE <span>→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="scw-feature__media">
-      <img src="images/image 7.jpg" alt="Real people real support">
-    </div>
-  </section>
-
-  <section class="scwake-track-record-section">
-    <div class="scwake-track-record-overlay"></div>
-
-    <div class="scwake-track-record-container">
-      <span class="scwake-track-record-badge">BY THE NUMBERS</span>
-
-      <h2 class="scwake-track-record-title">THE SC WAKE TRACK RECORD</h2>
-
-      <p class="scwake-track-record-text">
-        Two decades of results, thousands of satisfied customers, and a
-        product built to outlast the alternatives.
-      </p>
-
-      <div class="scwake-track-record-grid">
-        <div class="scwake-track-record-card">
-          <h3>20+</h3>
-          <h4>Years In The Industry</h4>
-          <p>Two decades of excellence</p>
-        </div>
-
-        <div class="scwake-track-record-card">
-          <h3>5000+</h3>
-          <h4>PROJECTS COMPLETED</h4>
-          <p>Boats transformed nationwide</p>
-        </div>
-
-        <div class="scwake-track-record-card">
-          <h3>98%</h3>
-          <h4>Customer Satisfaction</h4>
-          <p>Verified 5-star reviews</p>
-        </div>
-
-        <div class="scwake-track-record-card">
-          <h3>24/7</h3>
-          <h4>DEDICATED CUSTOMER SUPPORT</h4>
-          <p>Always here to help</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="scw-testimonials" style="background-image: url('images/image\ 10.jpg');">
-    <div class="scw-testimonials__overlay">
-      <div class="scw-testimonials__container">
-        <div class="scw-testimonials__header">
-          <div class="scw-testimonials__eyebrow">CUSTOMER STORIES</div>
-
-          <h2 class="scw-testimonials__title">What Boaters Are Saying</h2>
-
-          <p class="scw-testimonials__subtitle">
-            Real reviews from real customers — on the water and off.
-          </p>
-        </div>
-
-        <div class="scw-testimonials__grid">
-          <article class="scw-testimonials__card">
-            <div class="scw-testimonials__quote">❞</div>
-
-            <div class="scw-testimonials__stars">★★★★★</div>
-
-            <p class="scw-testimonials__text">
-              Love the gunnel pads bought 3 sets of them. They have the best customer service out there , I got a color
-              that didn't match my ski and they swapped it out no questions asked and very fast shipping.
-            </p>
-
-            <div class="scw-testimonials__footer">
-              <h3 class="scw-testimonials__name">CARISSA.0</h3>
-              <div class="scw-testimonials__verified">
-                <span class="scw-testimonials__verified-dot"></span>
-                <span>Verified Purchase</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="scw-testimonials__card">
-            <div class="scw-testimonials__quote">❞</div>
-
-            <div class="scw-testimonials__stars">★★★★★</div>
-
-            <p class="scw-testimonials__text">
-              Best product out there. Used this a few times now on light grey and with seadeck and looks brand new
-              after. Easy and fast to use. Anyone can use this stuff.
-            </p>
-
-            <div class="scw-testimonials__footer">
-              <h3 class="scw-testimonials__name">CHRIS. M</h3>
-              <div class="scw-testimonials__verified">
-                <span class="scw-testimonials__verified-dot"></span>
-                <span>Verified Purchase</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="scw-testimonials__card">
-            <div class="scw-testimonials__quote">❞</div>
-
-            <div class="scw-testimonials__stars">★★★★★</div>
-
-            <p class="scw-testimonials__text">
-              Amazing Quality.Outstanding Quality gets passengers attention. Great product.
-            </p>
-
-            <div class="scw-testimonials__footer">
-              <h3 class="scw-testimonials__name">ROBBIE. G</h3>
-              <div class="scw-testimonials__verified">
-                <span class="scw-testimonials__verified-dot"></span>
-                <span>Verified Purchase</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="scw-upgrade-banner"
-    style="background-image: url('https://cdn11.bigcommerce.com/s-trp3ijw84c/images/stencil/original/image-manager/div-overlay-.png?t=1772895557');">
-    <div class="scw-upgrade-banner__grain"></div>
-
-    <div class="scw-upgrade-banner__container">
-      <div class="scw-upgrade-banner__content">
-        <div class="scw-upgrade-banner__eyebrow">READY TO UPGRADE?</div>
-
-        <h2 class="scw-upgrade-banner__title">Time for an Upgrade</h2>
-
-        <p class="scw-upgrade-banner__subtitle">
-          Free shipping on orders $100+ · SeaDek certified fabrication
-        </p>
-
-        <div class="scw-upgrade-banner__buttons">
-          <a href="#" class="scw-upgrade-banner__btn scw-upgrade-banner__btn--light">
-            SHOP SC WAKE NOW
-          </a>
-
-          <a href="#" class="scw-upgrade-banner__btn scw-upgrade-banner__btn--dark">
-            REQUEST A CUSTOM QUOTE
-          </a>
-        </div>
-
-        <div class="scw-upgrade-banner__features">
-          <div class="scw-upgrade-banner__feature">
-            <span>✓</span>
-            <p>Free Shipping on $100+</p>
-          </div>
-
-          <div class="scw-upgrade-banner__feature">
-            <span>✓</span>
-            <p>SeaDek Certified</p>
-          </div>
-
-          <div class="scw-upgrade-banner__feature">
-            <span>✓</span>
-            <p>Easy DIY Install</p>
-          </div>
-
-          <div class="scw-upgrade-banner__feature">
-            <span>✓</span>
-            <p>Real Human Support</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <script src="code.js"></script>
 </body>
 
 </html>
